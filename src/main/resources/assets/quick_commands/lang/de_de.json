@@ -2,6 +2,7 @@
   "key.category.quick_commands": "QuickCommands",
   "key.quick_commands.open_gui": "GUI öffnen",
 
+  "text.quick_commands.set_time": "Zeit",
   "button.quick_commands.time_day": "Tag",
   "button.tooltip.quick_commands.time_day": "Setzt die Zeit auf Tag.",
   "button.quick_commands.time_noon": "Mittag",
@@ -11,6 +12,7 @@
   "button.quick_commands.time_midnight": "Mitternacht",
   "button.tooltip.quick_commands.time_midnight": "Setzt die Zeit auf Mitternacht.",
 
+  "text.quick_commands.set_weather": "Wetter",
   "button.quick_commands.weather_clear": "Klar",
   "button.tooltip.quick_commands.weather_clear": "Setzt das Wetter auf Klar.",
   "button.quick_commands.weather_rain": "Regen",

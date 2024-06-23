@@ -2,6 +2,7 @@
   "key.category.quick_commands": "QuickCommands",
   "key.quick_commands.open_gui": "GUI aufmocha",
 
+  "text.quick_commands.set_time": "Zeit",
   "button.quick_commands.time_day": "Tog",
   "button.tooltip.quick_commands.time_day": "Setzt de Zeit auf Tog.",
   "button.quick_commands.time_noon": "Mittog",
@@ -11,6 +12,7 @@
   "button.quick_commands.time_midnight": "Mittanocht",
   "button.tooltip.quick_commands.time_midnight": "Setzt de Zeit auf Mittanocht.",
 
+  "text.quick_commands.set_weather": "Wetta",
   "button.quick_commands.weather_clear": "Kloa",
   "button.tooltip.quick_commands.weather_clear": "Setzt des Wetta auf Kloa.",
   "button.quick_commands.weather_rain": "Regn",
