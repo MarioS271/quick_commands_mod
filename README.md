@@ -1,5 +1,5 @@
 # quick-commands-mod (fabric)
-### Minecraft Mod which enabled you to copy player coordinates and block coordinates with the press of a button.
+### A minecraft mod with GUIs for easy access to useful commands.
 
 <br>
 
