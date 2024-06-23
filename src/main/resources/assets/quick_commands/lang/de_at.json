@@ -1,4 +1,20 @@
 {
   "key.category.quick_commands": "QuickCommands",
-  "key.quick_commands.open_gui": "GUI aufmocha"
+  "key.quick_commands.open_gui": "GUI aufmocha",
+
+  "button.quick_commands.time_day": "Tog",
+  "button.tooltip.quick_commands.time_day": "Setzt de Zeit auf Tog.",
+  "button.quick_commands.time_noon": "Mittog",
+  "button.tooltip.quick_commands.time_noon": "Setzt de Zeit auf Mittog.",
+  "button.quick_commands.time_night": "Nocht",
+  "button.tooltip.quick_commands.time_night": "Setzt de Zeit auf Nocht.",
+  "button.quick_commands.time_midnight": "Mittanocht",
+  "button.tooltip.quick_commands.time_midnight": "Setzt de Zeit auf Mittanocht.",
+
+  "button.quick_commands.weather_clear": "Kloa",
+  "button.tooltip.quick_commands.weather_clear": "Setzt des Wetta auf Kloa.",
+  "button.quick_commands.weather_rain": "Regn",
+  "button.tooltip.quick_commands.weather_rain": "Setzt des Wetta auf Regn.",
+  "button.quick_commands.weather_thunder": "Gwitta",
+  "button.tooltip.quick_commands.weather_thunder": "Setzt des Wetta auf Gwitta."
 }

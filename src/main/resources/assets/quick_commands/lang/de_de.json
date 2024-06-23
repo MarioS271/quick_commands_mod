@@ -1,4 +1,20 @@
 {
   "key.category.quick_commands": "QuickCommands",
-  "key.quick_commands.open_gui": "GUI öffnen"
+  "key.quick_commands.open_gui": "GUI öffnen",
+
+  "button.quick_commands.time_day": "Tag",
+  "button.tooltip.quick_commands.time_day": "Setzt die Zeit auf Tag.",
+  "button.quick_commands.time_noon": "Mittag",
+  "button.tooltip.quick_commands.time_noon": "Setzt die Zeit auf Mittag.",
+  "button.quick_commands.time_night": "Nacht",
+  "button.tooltip.quick_commands.time_night": "Setzt die Zeit auf Nacht.",
+  "button.quick_commands.time_midnight": "Mitternacht",
+  "button.tooltip.quick_commands.time_midnight": "Setzt die Zeit auf Mitternacht.",
+
+  "button.quick_commands.weather_clear": "Klar",
+  "button.tooltip.quick_commands.weather_clear": "Setzt das Wetter auf Klar.",
+  "button.quick_commands.weather_rain": "Regen",
+  "button.tooltip.quick_commands.weather_rain": "Setzt das Wetter auf Regen.",
+  "button.quick_commands.weather_thunder": "Gewitter",
+  "button.tooltip.quick_commands.weather_thunder": "Setzt das Wetter auf Gewitter."
 }
