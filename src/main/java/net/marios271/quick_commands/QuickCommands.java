@@ -1,4 +1,4 @@
-package net.marios271.quick_commands_mod;
+package net.marios271.quick_commands;
 
 import net.fabricmc.api.ModInitializer;
 
