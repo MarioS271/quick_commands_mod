@@ -6,21 +6,37 @@ import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.marios271.quick_commands.screen.QuickCommandsScreen;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import org.lwjgl.glfw.GLFW;
 
 @Environment(EnvType.CLIENT)
 public class KeyInputHandler {
     public static final String KEY_CATEGORY_QUICK_COMMANDS = "key.category.quick_commands";
     public static final String KEY_OPEN_GUI = "key.quick_commands.open_gui";
+    public static final String KEY_TOGGLE_CLIENT_NV = "key.quick_commands.toggle_client_night_vision";
 
     public static KeyBinding openGuiKey;
+    public static KeyBinding toggleNVClientKey;
 
     public static void registerKeyInputs(){
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             if (openGuiKey.wasPressed()) {
                 MinecraftClient.getInstance().setScreen(new QuickCommandsScreen());
+            }
+
+            if (toggleNVClientKey.wasPressed()) {
+                ClientPlayerEntity player = MinecraftClient.getInstance().player;
+                assert player != null;
+
+                if (!player.hasStatusEffect(StatusEffects.NIGHT_VISION)) {
+                    player.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, -1));
+                } else {
+                    player.removeStatusEffect(StatusEffects.NIGHT_VISION);
+                }
             }
         });
     }
@@ -30,6 +46,12 @@ public class KeyInputHandler {
                 KEY_OPEN_GUI,
                 InputUtil.Type.KEYSYM,
                 GLFW.GLFW_KEY_F8,
+                KEY_CATEGORY_QUICK_COMMANDS
+        ));
+        toggleNVClientKey = KeyBindingHelper.registerKeyBinding(new KeyBinding(
+                KEY_TOGGLE_CLIENT_NV,
+                InputUtil.Type.KEYSYM,
+                GLFW.GLFW_KEY_F7,
                 KEY_CATEGORY_QUICK_COMMANDS
         ));
 

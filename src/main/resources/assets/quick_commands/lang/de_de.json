@@ -1,6 +1,7 @@
 {
   "key.category.quick_commands": "QuickCommands",
   "key.quick_commands.open_gui": "GUI öffnen",
+  "key.quick_commands.toggle_client_night_vision": "Client-Nachtsicht umschalten",
 
   "text.quick_commands.set_time": "Zeit",
   "button.quick_commands.time_day": "Tag",
@@ -18,5 +19,14 @@
   "button.quick_commands.weather_rain": "Regen",
   "button.tooltip.quick_commands.weather_rain": "Setzt das Wetter auf Regen.",
   "button.quick_commands.weather_thunder": "Gewitter",
-  "button.tooltip.quick_commands.weather_thunder": "Setzt das Wetter auf Gewitter."
+  "button.tooltip.quick_commands.weather_thunder": "Setzt das Wetter auf Gewitter.",
+
+  "text.quick_commands.set_effects": "Effekte",
+  "button.quick_commands.effect_give": "Geben",
+  "button.tooltip.quick_commands.effect_give": "Gibt dir den Effekt.",
+  "button.quick_commands.effect_clear": "Entfernen",
+  "button.tooltip.quick_commands.effect_clear": "Entfernt den Effekt.",
+  "text.quick_commands.effects.night_vision": "Nachtsicht",
+  "text.quick_commands.effects.invisibility": "Unsichtbarkeit",
+  "text.quick_commands.effects.resistance": "Resistenz"
 }

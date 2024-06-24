@@ -1,6 +1,7 @@
 {
   "key.category.quick_commands": "QuickCommands",
   "key.quick_commands.open_gui": "Open GUI",
+  "key.quick_commands.toggle_client_night_vision": "Toggle client night vision",
 
   "text.quick_commands.set_time": "Time",
   "button.quick_commands.time_day": "Day",
@@ -18,5 +19,14 @@
   "button.quick_commands.weather_rain": "Rain",
   "button.tooltip.quick_commands.weather_rain": "Sets the weather to rain.",
   "button.quick_commands.weather_thunder": "Thunder",
-  "button.tooltip.quick_commands.weather_thunder": "Sets the weather to thunder."
+  "button.tooltip.quick_commands.weather_thunder": "Sets the weather to thunder.",
+
+  "text.quick_commands.set_effects": "Effects",
+  "button.quick_commands.effect_give": "Give",
+  "button.tooltip.quick_commands.effect_give": "Gives you the effect.",
+  "button.quick_commands.effect_clear": "Clear",
+  "button.tooltip.quick_commands.effect_clear": "Clears the effect.",
+  "text.quick_commands.effects.night_vision": "Night Vision",
+  "text.quick_commands.effects.invisibility": "Invisibility",
+  "text.quick_commands.effects.resistance": "Resistance"
 }

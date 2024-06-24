@@ -1,6 +1,7 @@
 {
   "key.category.quick_commands": "QuickCommands",
   "key.quick_commands.open_gui": "GUI aufmocha",
+  "key.quick_commands.toggle_client_night_vision": "Client-Nochtsicht umschoitn",
 
   "text.quick_commands.set_time": "Zeit",
   "button.quick_commands.time_day": "Tog",
@@ -18,5 +19,14 @@
   "button.quick_commands.weather_rain": "Regn",
   "button.tooltip.quick_commands.weather_rain": "Setzt des Wetta auf Regn.",
   "button.quick_commands.weather_thunder": "Gwitta",
-  "button.tooltip.quick_commands.weather_thunder": "Setzt des Wetta auf Gwitta."
+  "button.tooltip.quick_commands.weather_thunder": "Setzt des Wetta auf Gwitta.",
+
+  "text.quick_commands.set_effects": "Effekte",
+  "button.quick_commands.effect_give": "Gebn",
+  "button.tooltip.quick_commands.effect_give": "Gibt dia den Effekt.",
+  "button.quick_commands.effect_clear": "Entferna",
+  "button.tooltip.quick_commands.effect_clear": "Entfernt dia den Effekt.",
+  "text.quick_commands.effects.night_vision": "Nochtsicht",
+  "text.quick_commands.effects.invisibility": "Unsichtbakeit",
+  "text.quick_commands.effects.resistance": "Resistenz"
 }
