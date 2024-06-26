@@ -2,6 +2,9 @@
   "key.category.quick_commands": "QuickCommands",
   "key.quick_commands.open_gui": "GUI öffnen",
   "key.quick_commands.toggle_client_night_vision": "Client-Nachtsicht umschalten",
+  "button.quick_commands.give": "Geben",
+  "button.quick_commands.clear": "Entfernen",
+  "cmd.quick_commands.clear_confirm": "tellraw @s [{\"bold\":true,\"color\":\"dark_red\",\"text\":\"(!) \"},{\"bold\":false,\"color\":\"red\",\"text\":\"Bist du dir sicher, dass du deine Items löschen willst? \"},{\"bold\":true,\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/clear @s\"},\"color\":\"green\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"Löscht dein gesamtes Inventar.\"}]},\"italic\":true,\"text\":\"[JA]\"}]",
 
   "text.quick_commands.set_time": "Zeit",
   "button.quick_commands.time_day": "Tag",
@@ -22,11 +25,20 @@
   "button.tooltip.quick_commands.weather_thunder": "Setzt das Wetter auf Gewitter.",
 
   "text.quick_commands.set_effects": "Effekte",
-  "button.quick_commands.effect_give": "Geben",
   "button.tooltip.quick_commands.effect_give": "Gibt dir den Effekt.",
-  "button.quick_commands.effect_clear": "Entfernen",
   "button.tooltip.quick_commands.effect_clear": "Entfernt den Effekt.",
-  "text.quick_commands.effects.night_vision": "Nachtsicht",
-  "text.quick_commands.effects.invisibility": "Unsichtbarkeit",
-  "text.quick_commands.effects.resistance": "Resistenz"
+  "textfield.tooltip.quick_commands.effect_strength": "Effektstärke",
+  "text.quick_commands.status.no_effect_value": "§cFehlende Ganzzahl für 'Effekt_Stärke'§r",
+  "text.quick_commands.effects.resistance": "Resistenz",
+  "text.quick_commands.effects.regeneration": "Regeneration",
+  "text.quick_commands.effects.speed": "Geschwindigkeit",
+  "text.quick_commands.effects.jump_boost": "Sprungboost",
+
+  "text.quick_commands.set_items": "Items",
+  "button.tooltip.quick_commands.item_give": "Gives you the set item.",
+  "button.tooltip.quick_commands.item_clear": "§c(!)§r Löscht deine ganzen Items.",
+  "text.quick_commands.confirm_clear": "Bist du dir sicher, dass du dein Inventar leeren willst?",
+  "textfield.tooltip.quick_commands.item": "Item-ID",
+  "textfield.tooltip.quick_commands.item_qty": "Item-Anzahl (Optional)",
+  "text.quick_commands.status.no_item": "§cFehlender Text für 'Item'§r"
 }

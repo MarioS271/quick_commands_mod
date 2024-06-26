@@ -51,7 +51,7 @@ public class KeyInputHandler {
         toggleNVClientKey = KeyBindingHelper.registerKeyBinding(new KeyBinding(
                 KEY_TOGGLE_CLIENT_NV,
                 InputUtil.Type.KEYSYM,
-                GLFW.GLFW_KEY_F7,
+                GLFW.GLFW_KEY_COMMA,
                 KEY_CATEGORY_QUICK_COMMANDS
         ));
 
