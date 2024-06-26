@@ -1,6 +1,9 @@
 {
   "key.category.quick_commands": "QuickCommands",
   "key.quick_commands.open_gui": "Открыть меню",
+  "button.quick_commands.give": "Give",
+  "button.quick_commands.clear": "Clear",
+  "cmd.quick_commands.clear_confirm": "tellraw @s [{\"bold\":true,\"color\":\"dark_red\",\"text\":\"(!) \"},{\"bold\":false,\"color\":\"red\",\"text\":\"Are you sure you want to delete your items? \"},{\"bold\":true,\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/clear @s\"},\"color\":\"green\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"Deletes your entire inventory.\"}]},\"italic\":true,\"text\":\"[YES]\"}]",
 
   "text.quick_commands.set_time": "Время",
   "button.quick_commands.time_day": "День",
@@ -18,5 +21,23 @@
   "button.quick_commands.weather_rain": "Дождь",
   "button.tooltip.quick_commands.weather_rain": "Включает дождливую погоду.",
   "button.quick_commands.weather_thunder": "Гроза",
-  "button.tooltip.quick_commands.weather_thunder": "Включает грозовую погоду."
+  "button.tooltip.quick_commands.weather_thunder": "Включает грозовую погоду.",
+
+  "text.quick_commands.set_effects": "Effects",
+  "button.tooltip.quick_commands.effect_give": "Gives you the effect.",
+  "button.tooltip.quick_commands.effect_clear": "Clears the effect.",
+  "textfield.tooltip.quick_commands.effect_strength": "Effect Strength",
+  "text.quick_commands.status.no_effect_value": "§cMissing Integer value for 'Effect_Strength'§r",
+  "text.quick_commands.effects.resistance": "Resistance",
+  "text.quick_commands.effects.regeneration": "Regeneration",
+  "text.quick_commands.effects.speed": "Speed",
+  "text.quick_commands.effects.jump_boost": "Jump Boost",
+
+  "text.quick_commands.set_items": "Items",
+  "button.tooltip.quick_commands.item_give": "Gives you the set item.",
+  "button.tooltip.quick_commands.item_clear": "§c(!)§r Clears all your items.",
+  "text.quick_commands.confirm_clear": "Are you sure that you want to clear your inventory?",
+  "textfield.tooltip.quick_commands.item": "Item ID",
+  "textfield.tooltip.quick_commands.item_qty": "Item Quantity (Optional)",
+  "text.quick_commands.status.no_item": "§cMissing String value for 'Item_ID'§r"
 }

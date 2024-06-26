@@ -3,10 +3,19 @@
 
 <br>
 
-### Current Features (v1.0):
-- nope
+### Current Features (v1.1):
+- Set the time
+- Set the weather
+- Give yourself some effects
+- Manage your items
 
-<br>
+### Languages:
+- English
+- German
+- German (Austrian)
+- [PARTIAL] Russian
+- [PARTIAL] Ukrainian
+
 <hr>
 
 ### Download here:

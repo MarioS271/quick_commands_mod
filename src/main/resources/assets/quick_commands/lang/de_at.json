@@ -1,6 +1,10 @@
 {
   "key.category.quick_commands": "QuickCommands",
   "key.quick_commands.open_gui": "GUI aufmocha",
+  "key.quick_commands.toggle_client_night_vision": "Client-Nochtsicht umschoitn",
+  "button.quick_commands.give": "Gebn",
+  "button.quick_commands.clear": "Entferna",
+  "cmd.quick_commands.clear_confirm": "tellraw @s [{\"bold\":true,\"color\":\"dark_red\",\"text\":\"(!) \"},{\"bold\":false,\"color\":\"red\",\"text\":\"Bist da sicha dast deine gonzn Items löschn wüst? \"},{\"bold\":true,\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/clear @s\"},\"color\":\"green\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"Löscht dei gesamts Inventar.\"}]},\"italic\":true,\"text\":\"[JO]\"}]",
 
   "text.quick_commands.set_time": "Zeit",
   "button.quick_commands.time_day": "Tog",
@@ -18,5 +22,23 @@
   "button.quick_commands.weather_rain": "Regn",
   "button.tooltip.quick_commands.weather_rain": "Setzt des Wetta auf Regn.",
   "button.quick_commands.weather_thunder": "Gwitta",
-  "button.tooltip.quick_commands.weather_thunder": "Setzt des Wetta auf Gwitta."
+  "button.tooltip.quick_commands.weather_thunder": "Setzt des Wetta auf Gwitta.",
+
+  "text.quick_commands.set_effects": "Effekte",
+  "button.tooltip.quick_commands.effect_give": "Gibt dia den Effekt.",
+  "button.tooltip.quick_commands.effect_clear": "Entfernt dia den Effekt.",
+  "textfield.tooltip.quick_commands.effect_strength": "Effektstärke",
+  "text.quick_commands.status.no_effect_value": "§cFehlende Gonzzoi füa 'Effekt_Stärke'§r",
+  "text.quick_commands.effects.resistance": "Resistenz",
+  "text.quick_commands.effects.regeneration": "Regeneration",
+  "text.quick_commands.effects.speed": "Geschwindigkeit",
+  "text.quick_commands.effects.jump_boost": "Sprungboost",
+
+  "text.quick_commands.set_items": "Items",
+  "button.tooltip.quick_commands.item_give": "Gibt da des Item.",
+  "button.tooltip.quick_commands.item_clear": "§c(!)§r Nimmt dia deine gonzn Items weg.",
+  "text.quick_commands.confirm_clear": "Bist du dia sicha das du dei Inventar leeren wüst?",
+  "textfield.tooltip.quick_commands.item": "Item-ID",
+  "textfield.tooltip.quick_commands.item_qty": "Item-Anzahl (Optional)",
+  "text.quick_commands.status.no_item": "§cFehlenda Text füa 'Item'§r"
 }
