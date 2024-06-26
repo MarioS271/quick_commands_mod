@@ -1,0 +1,22 @@
+{
+  "key.category.quick_commands": "QuickCommands",
+  "key.quick_commands.open_gui": "Открыть меню",
+
+  "text.quick_commands.set_time": "Время",
+  "button.quick_commands.time_day": "День",
+  "button.tooltip.quick_commands.time_day": "Устанавливает время на день.",
+  "button.quick_commands.time_noon": "Полдень",
+  "button.tooltip.quick_commands.time_noon": "Устанавливает время на полдень.",
+  "button.quick_commands.time_night": "Ночь",
+  "button.tooltip.quick_commands.time_night": "Устанавливает время на ночь.",
+  "button.quick_commands.time_midnight": "Полночь",
+  "button.tooltip.quick_commands.time_midnight": "Устанавливает время на полночь.",
+
+  "text.quick_commands.set_weather": "Погода",
+  "button.quick_commands.weather_clear": "Ясно",
+  "button.tooltip.quick_commands.weather_clear": "Включает ясную погоду.",
+  "button.quick_commands.weather_rain": "Дождь",
+  "button.tooltip.quick_commands.weather_rain": "Включает дождливую погоду.",
+  "button.quick_commands.weather_thunder": "Гроза",
+  "button.tooltip.quick_commands.weather_thunder": "Включает грозовую погоду."
+}
