@@ -4,8 +4,7 @@
   "key.quick_commands.toggle_client_night_vision": "Toggle client night vision",
   "button.quick_commands.give": "Give",
   "button.quick_commands.clear": "Clear",
-  "cmd.quick_commands.clear_confirm": "tellraw @s [{\"bold\":true,\"color\":\"dark_red\",\"text\":\"(!) \"},{\"bold\":false,\"color\":\"red\",\"text\":\"Are you sure you want to delete your items? \"},{\"bold\":true,\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/clear @s\"},\"color\":\"green\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"Deletes your entire inventory.\"}]},\"italic\":true,\"text\":\"[YES]\"}]",
-
+  
   "text.quick_commands.set_time": "Time",
   "button.quick_commands.time_day": "Day",
   "button.tooltip.quick_commands.time_day": "Sets the time to day.",

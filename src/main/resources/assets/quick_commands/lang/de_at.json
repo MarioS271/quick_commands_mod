@@ -4,7 +4,6 @@
   "key.quick_commands.toggle_client_night_vision": "Client-Nochtsicht umschoitn",
   "button.quick_commands.give": "Gebn",
   "button.quick_commands.clear": "Entferna",
-  "cmd.quick_commands.clear_confirm": "tellraw @s [{\"bold\":true,\"color\":\"dark_red\",\"text\":\"(!) \"},{\"bold\":false,\"color\":\"red\",\"text\":\"Bist da sicha dast deine gonzn Items löschn wüst? \"},{\"bold\":true,\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/clear @s\"},\"color\":\"green\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"Löscht dei gesamts Inventar.\"}]},\"italic\":true,\"text\":\"[JO]\"}]",
 
   "text.quick_commands.set_time": "Zeit",
   "button.quick_commands.time_day": "Tog",

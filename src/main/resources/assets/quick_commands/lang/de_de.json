@@ -4,7 +4,6 @@
   "key.quick_commands.toggle_client_night_vision": "Client-Nachtsicht umschalten",
   "button.quick_commands.give": "Geben",
   "button.quick_commands.clear": "Entfernen",
-  "cmd.quick_commands.clear_confirm": "tellraw @s [{\"bold\":true,\"color\":\"dark_red\",\"text\":\"(!) \"},{\"bold\":false,\"color\":\"red\",\"text\":\"Bist du dir sicher, dass du deine Items löschen willst? \"},{\"bold\":true,\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/clear @s\"},\"color\":\"green\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":[{\"text\":\"Löscht dein gesamtes Inventar.\"}]},\"italic\":true,\"text\":\"[JA]\"}]",
 
   "text.quick_commands.set_time": "Zeit",
   "button.quick_commands.time_day": "Tag",
