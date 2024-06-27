@@ -1,5 +1,5 @@
 # quick-commands-mod (fabric)
-### A minecraft mod with GUIs for easy access to useful commands.
+A minecraft mod with GUIs for easy access to useful commands.
 
 <br>
 
