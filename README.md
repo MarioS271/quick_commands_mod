@@ -17,7 +17,7 @@ A minecraft mod with GUIs for easy access to useful commands.
 - Ukrainian
 
 ### Special Thanks:
--  for translating the mod into Russian and Ukranian
+- [ludwici](https://github.com/ludwici) for translating the mod into Russian and Ukranian
 
 <hr>
 
