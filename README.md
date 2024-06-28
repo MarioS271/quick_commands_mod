@@ -13,8 +13,8 @@ A minecraft mod with GUIs for easy access to useful commands.
 - English
 - German
 - German (Austrian)
-- [PARTIAL] Russian
-- [PARTIAL] Ukrainian
+- Russian
+- Ukrainian
 
 <hr>
 
