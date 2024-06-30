@@ -4,6 +4,9 @@
   "key.quick_commands.toggle_client_night_vision": "Client-Nachtsicht umschalten",
   "button.quick_commands.give": "Geben",
   "button.quick_commands.clear": "Entfernen",
+  "gui_title.quick_commands.commands": "QuickCommands",
+  "gui_title.quick_commands.confirm_clear": "Löschen des Inventars bestätigen",
+  "gui_title.quick_commands.settings": "Einstellungen",
 
   "text.quick_commands.set_time": "Zeit",
   "button.quick_commands.time_day": "Tag",

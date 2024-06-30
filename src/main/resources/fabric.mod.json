@@ -15,6 +15,7 @@
 	"license": "CC0-1.0",
 	"icon": "assets/quick_commands/icon.png",
 	"environment": "client",
+	"accessWidener" : "quick_commands.accesswidener",
 	"entrypoints": {
 		"main": [
 			"net.marios271.quick_commands.QuickCommands"

@@ -2,10 +2,8 @@ package net.marios271.quick_commands.screen;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
+import net.marios271.quick_commands.event.KeyInputHandler;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.gui.navigation.GuiNavigation;
-import net.minecraft.client.gui.navigation.GuiNavigationPath;
-import net.minecraft.client.gui.navigation.NavigationDirection;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.tooltip.Tooltip;
 import net.minecraft.client.gui.widget.ButtonWidget;
@@ -234,8 +232,11 @@ public class QuickCommandsScreen extends Screen {
 
     @Override
     public boolean keyPressed(int keyCode, int scanCode, int modifiers) {
-        if (keyCode == GLFW.GLFW_KEY_F8) { MinecraftClient.getInstance().setScreen(null); }
-        return true;
+        if (keyCode == KeyInputHandler.openGuiKey.boundKey.getCode()) {
+            MinecraftClient.getInstance().setScreen(null);
+            return true;
+        }
+        return false;
     }
 
     private void execute(String command){

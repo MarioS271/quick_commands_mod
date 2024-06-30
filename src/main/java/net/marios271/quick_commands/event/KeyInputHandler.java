@@ -18,9 +18,11 @@ public class KeyInputHandler {
     public static final String KEY_CATEGORY_QUICK_COMMANDS = "key.category.quick_commands";
     public static final String KEY_OPEN_GUI = "key.quick_commands.open_gui";
     public static final String KEY_TOGGLE_CLIENT_NV = "key.quick_commands.toggle_client_night_vision";
+    public static final String KEY_OPEN_SETTINGS = "key.quick_commands.open_settings";
 
     public static KeyBinding openGuiKey;
     public static KeyBinding toggleNVClientKey;
+    public static KeyBinding openSettingsKey;
 
     public static void registerKeyInputs(){
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
@@ -51,6 +53,12 @@ public class KeyInputHandler {
                 KEY_TOGGLE_CLIENT_NV,
                 InputUtil.Type.KEYSYM,
                 GLFW.GLFW_KEY_COMMA,
+                KEY_CATEGORY_QUICK_COMMANDS
+        ));
+        openSettingsKey = KeyBindingHelper.registerKeyBinding(new KeyBinding(
+                KEY_OPEN_SETTINGS,
+                InputUtil.Type.KEYSYM,
+                GLFW.GLFW_KEY_UNKNOWN,
                 KEY_CATEGORY_QUICK_COMMANDS
         ));
 

@@ -1,9 +1,13 @@
 {
   "key.category.quick_commands": "QuickCommands",
   "key.quick_commands.open_gui": "Open GUI",
+  "key.quick_commands.open_settings": "Open Settings",
   "key.quick_commands.toggle_client_night_vision": "Toggle client night vision",
   "button.quick_commands.give": "Give",
   "button.quick_commands.clear": "Clear",
+  "gui_title.quick_commands.commands": "QuickCommands",
+  "gui_title.quick_commands.confirm_clear": "Confirm Clear Inventory",
+  "gui_title.quick_commands.settings": "Settings",
   
   "text.quick_commands.set_time": "Time",
   "button.quick_commands.time_day": "Day",
