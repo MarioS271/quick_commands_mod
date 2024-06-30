@@ -14,7 +14,7 @@
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/quick_commands/icon.png",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
 		"main": [
 			"net.marios271.quick_commands.QuickCommands"

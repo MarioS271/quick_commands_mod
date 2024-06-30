@@ -25,17 +25,16 @@ public class KeyInputHandler {
     public static void registerKeyInputs(){
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             if (openGuiKey.wasPressed()) {
-                MinecraftClient.getInstance().setScreen(new QuickCommandsScreen());
+                client.setScreen(new QuickCommandsScreen());
             }
 
             if (toggleNVClientKey.wasPressed()) {
-                ClientPlayerEntity player = MinecraftClient.getInstance().player;
-                assert player != null;
+                assert client.player != null;
 
-                if (!player.hasStatusEffect(StatusEffects.NIGHT_VISION)) {
-                    player.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, -1));
+                if (!client.player.hasStatusEffect(StatusEffects.NIGHT_VISION)) {
+                    client.player.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, -1));
                 } else {
-                    player.removeStatusEffect(StatusEffects.NIGHT_VISION);
+                    client.player.removeStatusEffect(StatusEffects.NIGHT_VISION);
                 }
             }
         });
