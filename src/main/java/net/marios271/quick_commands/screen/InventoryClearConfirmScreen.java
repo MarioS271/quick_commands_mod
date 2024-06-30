@@ -2,6 +2,7 @@ package net.marios271.quick_commands.screen;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
+import net.marios271.quick_commands.event.KeyInputHandler;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.font.TextRenderer;
 import net.minecraft.client.gui.screen.Screen;
@@ -13,7 +14,7 @@ import static net.minecraft.util.math.MathHelper.floor;
 
 @Environment(EnvType.CLIENT)
 public class InventoryClearConfirmScreen extends Screen {
-    public InventoryClearConfirmScreen() { super(Text.of("Confirm Clear Inventory")); }
+    public InventoryClearConfirmScreen() { super(Text.translatable("gui_title.quick_commands.confirm_clear")); }
 
     @Override
     protected void init() {
@@ -39,5 +40,13 @@ public class InventoryClearConfirmScreen extends Screen {
         addDrawableChild(text);
         addDrawableChild(button_yes);
         addDrawableChild(button_no);
+    }
+
+    public boolean keyPressed(int keyCode, int scanCode, int modifiers) {
+        if (keyCode == KeyInputHandler.openGuiKey.boundKey.getCode()) {
+            MinecraftClient.getInstance().setScreen(null);
+            return true;
+        }
+        return super.keyPressed(keyCode, scanCode, modifiers);
     }
 }

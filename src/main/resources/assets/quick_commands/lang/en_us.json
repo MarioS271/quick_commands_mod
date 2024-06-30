@@ -4,7 +4,15 @@
   "key.quick_commands.toggle_client_night_vision": "Toggle client night vision",
   "button.quick_commands.give": "Give",
   "button.quick_commands.clear": "Clear",
-  
+  "gui_title.quick_commands.commands": "QuickCommands",
+  "gui_title.quick_commands.confirm_clear": "Confirm Clear Inventory",
+  "gui_title.quick_commands.settings": "Settings",
+
+  "button.quick_commands.close_settings": "Close Settings",
+  "button.quick_commands.settings.enabled": "§aenabled§r",
+  "button.quick_commands.settings.disabled": "§cdisabled§r",
+  "text.quick_commands.settings.always_use_nv": "Always use Night Vision",
+
   "text.quick_commands.set_time": "Time",
   "button.quick_commands.time_day": "Day",
   "button.tooltip.quick_commands.time_day": "Sets the time to day.",

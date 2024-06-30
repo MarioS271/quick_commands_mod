@@ -18,7 +18,7 @@ import java.util.Objects;
 @Environment(EnvType.CLIENT)
 public class QuickCommandsScreen extends Screen {
     public QuickCommandsScreen() {
-        super(Text.of("QuickCommands"));
+        super(Text.translatable("gui_title.quick_commands.commands"));
     }
 
     @Override

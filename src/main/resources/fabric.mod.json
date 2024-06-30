@@ -30,6 +30,7 @@
 		"java": ">=21",
 		"fabric": "*",
 		"fabric-api": "*",
-		"fabric-key-binding-api-v1": "*"
+		"fabric-key-binding-api-v1": "*",
+		"owo-lib": "*"
 	}
 }
