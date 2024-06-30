@@ -4,9 +4,6 @@
   "key.quick_commands.toggle_client_night_vision": "Client-Nochtsicht umschoitn",
   "button.quick_commands.give": "Gebn",
   "button.quick_commands.clear": "Entferna",
-  "gui_title.quick_commands.commands": "QuickCommands",
-  "gui_title.quick_commands.confirm_clear": "Löschn vom Inventa bestätign",
-  "gui_title.quick_commands.settings": "Einstellungen",
 
   "text.quick_commands.set_time": "Zeit",
   "button.quick_commands.time_day": "Tog",

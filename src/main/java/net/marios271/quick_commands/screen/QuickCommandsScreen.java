@@ -12,7 +12,6 @@ import net.minecraft.client.gui.widget.TextWidget;
 import net.minecraft.client.font.TextRenderer;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.text.Text;
-import org.lwjgl.glfw.GLFW;
 
 import java.util.Objects;
 
@@ -230,13 +229,12 @@ public class QuickCommandsScreen extends Screen {
         addDrawableChild(button_items_clear);
     }
 
-    @Override
     public boolean keyPressed(int keyCode, int scanCode, int modifiers) {
         if (keyCode == KeyInputHandler.openGuiKey.boundKey.getCode()) {
             MinecraftClient.getInstance().setScreen(null);
             return true;
         }
-        return false;
+        return super.keyPressed(keyCode, scanCode, modifiers);
     }
 
     private void execute(String command){

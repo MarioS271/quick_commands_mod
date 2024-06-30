@@ -13,7 +13,7 @@ import static net.minecraft.util.math.MathHelper.floor;
 
 @Environment(EnvType.CLIENT)
 public class InventoryClearConfirmScreen extends Screen {
-    public InventoryClearConfirmScreen() { super(Text.translatable("gui_title.quick_commands.confirm_clear")); }
+    public InventoryClearConfirmScreen() { super(Text.of("Confirm Clear Inventory")); }
 
     @Override
     protected void init() {
