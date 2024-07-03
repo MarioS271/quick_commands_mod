@@ -1,18 +1,10 @@
 {
   "key.category.quick_commands": "QuickCommands",
   "key.quick_commands.open_gui": "Open GUI",
-  "key.quick_commands.toggle_client_night_vision": "Toggle client night vision",
   "button.quick_commands.give": "Give",
   "button.quick_commands.clear": "Clear",
   "gui_title.quick_commands.commands": "QuickCommands",
   "gui_title.quick_commands.confirm_clear": "Confirm Clear Inventory",
-  "gui_title.quick_commands.config": "QuickCommands Configuration",
-
-  "button.quick_commands.config_close": "Save and Close",
-  "button.quick_commands.config_enabled": "[§a✔§r] Enabled",
-  "button.quick_commands.config_disabled": "[§c✖§r] Disabled",
-  "text.quick_commands.config.remember_nv": "Remember Night Vision",
-  "text.quick_commands.config.auto_nv": "Automatically enable Night Vision",
 
   "text.quick_commands.set_time": "Time",
   "button.quick_commands.time_day": "Day",

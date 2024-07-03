@@ -19,8 +19,7 @@
 	"entrypoints": {
 		"client": [
 			"net.marios271.quick_commands.QuickCommands"
-		],
-		"modmenu": [ "net.marios271.quick_commands.config.ModMenuImplementation" ]
+		]
 	},
 	"depends": {
 		"fabricloader": ">=0.14.0",
@@ -29,8 +28,5 @@
 		"fabric": "*",
 		"fabric-api": "*",
 		"fabric-key-binding-api-v1": "*"
-	},
-	"suggests": {
-		"modmenu": "*"
 	}
 }

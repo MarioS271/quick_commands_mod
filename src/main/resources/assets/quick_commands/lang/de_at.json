@@ -1,17 +1,10 @@
 {
   "key.category.quick_commands": "QuickCommands",
   "key.quick_commands.open_gui": "GUI aufmocha",
-  "key.quick_commands.toggle_client_night_vision": "Client-Nochtsicht umschoitn",
   "button.quick_commands.give": "Gebn",
   "button.quick_commands.clear": "Entferna",
   "gui_title.quick_commands.commands": "QuickCommands",
   "gui_title.quick_commands.confirm_clear": "Löschn vom Inventa bestätign",
-  "gui_title.quick_commands.settings": "Einstellungen",
-
-  "button.quick_commands.close_settings": "Einstellungen schließen",
-  "button.quick_commands.settings.enabled": "§aeigschoitn§r",
-  "button.quick_commands.settings.disabled": "§causgschoitn§r",
-  "text.quick_commands.settings.always_use_nv": "Imma Nochtsicht verwendn",
 
   "text.quick_commands.set_time": "Zeit",
   "button.quick_commands.time_day": "Tog",
