@@ -1,9 +1,8 @@
 package net.marios271.quick_commands.event;
 
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
+import net.marios271.quick_commands.config.ModConfigs;
 import net.marios271.quick_commands.screen.QuickCommandsScreen;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
@@ -11,7 +10,6 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import org.lwjgl.glfw.GLFW;
 
-@Environment(EnvType.CLIENT)
 public class KeyInputHandler {
     public static final String KEY_CATEGORY_QUICK_COMMANDS = "key.category.quick_commands";
     public static final String KEY_OPEN_GUI = "key.quick_commands.open_gui";
@@ -29,9 +27,11 @@ public class KeyInputHandler {
             if (toggleNVClientKey.wasPressed()) {
                 assert client.player != null;
 
-                if (!client.player.hasStatusEffect(StatusEffects.NIGHT_VISION)) {
+                if (!ModConfigs.NV_STATUS) {
+                    ModConfigs.NV_STATUS = true;
                     client.player.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, -1));
                 } else {
+                    ModConfigs.NV_STATUS = false;
                     client.player.removeStatusEffect(StatusEffects.NIGHT_VISION);
                 }
             }

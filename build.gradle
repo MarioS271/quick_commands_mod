@@ -15,7 +15,10 @@ base {
 }
 
 repositories {
-	maven { url 'https://maven.wispforest.io/releases/' }
+	maven {
+		name = "Terraformers"
+		url = "https://maven.terraformersmc.com/"
+	}
 }
 
 dependencies {
@@ -27,7 +30,7 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	include(annotationProcessor(modImplementation("io.wispforest:owo-lib:${project.owo_version}")))
+	modImplementation("com.terraformersmc:modmenu:${project.modmenu_version}")
 }
 
 processResources {

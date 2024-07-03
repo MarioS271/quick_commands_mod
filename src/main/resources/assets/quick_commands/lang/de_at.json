@@ -47,5 +47,5 @@
   "text.quick_commands.confirm_clear": "Bist du dia sicha das du dei Inventar leeren wüst?",
   "textfield.tooltip.quick_commands.item": "Item-ID",
   "textfield.tooltip.quick_commands.item_qty": "Item-Anzahl (Optional)",
-  "text.quick_commands.status.no_item": "§cFehlenda Text füa 'Item'§r"
+  "text.quick_commands.status.no_item": "§cFehlenda Text füa 'Item_ID'§r"
 }

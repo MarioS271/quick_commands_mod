@@ -1,7 +1,5 @@
 package net.marios271.quick_commands.screen;
 
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.marios271.quick_commands.event.KeyInputHandler;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.font.TextRenderer;
@@ -12,7 +10,6 @@ import net.minecraft.text.Text;
 import static net.minecraft.client.resource.language.I18n.translate;
 import static net.minecraft.util.math.MathHelper.floor;
 
-@Environment(EnvType.CLIENT)
 public class InventoryClearConfirmScreen extends Screen {
     public InventoryClearConfirmScreen() { super(Text.translatable("gui_title.quick_commands.confirm_clear")); }
 

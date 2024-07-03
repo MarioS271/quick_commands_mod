@@ -47,5 +47,5 @@
   "text.quick_commands.confirm_clear": "Bist du dir sicher, dass du dein Inventar leeren willst?",
   "textfield.tooltip.quick_commands.item": "Item-ID",
   "textfield.tooltip.quick_commands.item_qty": "Item-Anzahl (Optional)",
-  "text.quick_commands.status.no_item": "§cFehlender Text für 'Item'§r"
+  "text.quick_commands.status.no_item": "§cFehlender Text für 'Item_ID'§r"
 }
