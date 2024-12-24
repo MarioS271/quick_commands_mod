@@ -95,7 +95,7 @@ public class QuickCommandsScreen extends Screen {
         textfield_resistance.setTooltip(Tooltip.of(Text.translatable("textfield.tooltip.quick_commands.effect_strength")));
         ButtonWidget button_effect_resistance_give = ButtonWidget.builder(Text.translatable("button.quick_commands.give"), button -> {
                     try { execute("effect give @s resistance infinite " + Integer.parseInt(textfield_resistance.getText()) + " true"); }
-                    catch (NumberFormatException e) { client.player.sendMessage(Text.translatable("text.quick_commands.status.no_effect_value")); }
+                    catch (NumberFormatException e) { client.player.sendMessage(Text.translatable("text.quick_commands.status.no_effect_value"), false); }
                 })
                 .dimensions(width / 2 + 108, height / 2 - 95, 50, 20)
                 .tooltip(Tooltip.of(Text.translatable("button.tooltip.quick_commands.effect_give")))
@@ -120,7 +120,7 @@ public class QuickCommandsScreen extends Screen {
         textfield_regeneration.setTooltip(Tooltip.of(Text.translatable("textfield.tooltip.quick_commands.effect_strength")));
         ButtonWidget button_effect_regeneration_give = ButtonWidget.builder(Text.translatable("button.quick_commands.give"), button -> {
                     try { execute("effect give @s regeneration infinite " + Integer.parseInt(textfield_regeneration.getText()) + " true"); }
-                    catch (NumberFormatException e) { client.player.sendMessage(Text.translatable("text.quick_commands.status.no_effect_value")); }
+                    catch (NumberFormatException e) { client.player.sendMessage(Text.translatable("text.quick_commands.status.no_effect_value"), false); }
                 })
                 .dimensions(width / 2 + 108, height / 2 - 70, 50, 20)
                 .tooltip(Tooltip.of(Text.translatable("button.tooltip.quick_commands.effect_give")))
@@ -145,7 +145,7 @@ public class QuickCommandsScreen extends Screen {
         textfield_speed.setTooltip(Tooltip.of(Text.translatable("textfield.tooltip.quick_commands.effect_strength")));
         ButtonWidget button_effect_speed_give = ButtonWidget.builder(Text.translatable("button.quick_commands.give"), button -> {
                     try { execute("effect give @s speed infinite " + Integer.parseInt(textfield_speed.getText()) + " true"); }
-                    catch (NumberFormatException e) { client.player.sendMessage(Text.translatable("text.quick_commands.status.no_effect_value")); }
+                    catch (NumberFormatException e) { client.player.sendMessage(Text.translatable("text.quick_commands.status.no_effect_value"), false); }
                 })
                 .dimensions(width / 2 + 108, height / 2 - 45, 50, 20)
                 .tooltip(Tooltip.of(Text.translatable("button.tooltip.quick_commands.effect_give")))
@@ -170,7 +170,7 @@ public class QuickCommandsScreen extends Screen {
         textfield_jump_boost.setTooltip(Tooltip.of(Text.translatable("textfield.tooltip.quick_commands.effect_strength")));
         ButtonWidget button_effect_jump_boost_give = ButtonWidget.builder(Text.translatable("button.quick_commands.give"), button -> {
                     try { execute("effect give @s jump_boost infinite " + Integer.parseInt(textfield_jump_boost.getText()) + " true"); }
-                    catch (NumberFormatException e) { client.player.sendMessage(Text.translatable("text.quick_commands.status.no_effect_value")); }
+                    catch (NumberFormatException e) { client.player.sendMessage(Text.translatable("text.quick_commands.status.no_effect_value"), false); }
                 })
                 .dimensions(width / 2 + 108, height / 2 - 20, 50, 20)
                 .tooltip(Tooltip.of(Text.translatable("button.tooltip.quick_commands.effect_give")))
@@ -200,7 +200,7 @@ public class QuickCommandsScreen extends Screen {
                         try { execute("give @s " + textfield_item.getText() + " " + Integer.parseInt(textfield_item_qty.getText())); }
                         catch (NumberFormatException e) { execute("give @s " + textfield_item.getText() + " 1"); }
                     } else {
-                        client.player.sendMessage(Text.translatable("text.quick_commands.status.no_item"));
+                        client.player.sendMessage(Text.translatable("text.quick_commands.status.no_item"), false);
                         client.setScreen(null);
                     }
                 })
