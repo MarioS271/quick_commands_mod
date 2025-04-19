@@ -3,7 +3,7 @@ A minecraft mod with GUIs for easy access to useful commands.
 
 <br>
 
-### Current Features (v1.1):
+### Current Features (v1.2):
 - Set the time
 - Set the weather
 - Give yourself some effects
