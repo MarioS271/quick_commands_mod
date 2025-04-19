@@ -1,10 +1,7 @@
 {
   "key.category.quick_commands": "QuickCommands",
   "key.quick_commands.open_gui": "GUI öffnen",
-  "button.quick_commands.give": "Geben",
-  "button.quick_commands.clear": "Entfernen",
   "gui_title.quick_commands.commands": "QuickCommands",
-  "gui_title.quick_commands.confirm_clear": "Löschen des Inventars bestätigen",
 
   "text.quick_commands.set_time": "Zeit",
   "button.quick_commands.time_day": "Tag",
@@ -25,6 +22,8 @@
   "button.tooltip.quick_commands.weather_thunder": "Setzt das Wetter auf Gewitter.",
 
   "text.quick_commands.set_effects": "Effekte",
+  "button.quick_commands.give": "Geben",
+  "button.quick_commands.clear": "Entfernen",
   "button.tooltip.quick_commands.effect_give": "Gibt dir den Effekt.",
   "button.tooltip.quick_commands.effect_clear": "Entfernt den Effekt.",
   "textfield.tooltip.quick_commands.effect_strength": "Effektstärke",
@@ -34,11 +33,12 @@
   "text.quick_commands.effects.speed": "Geschwindigkeit",
   "text.quick_commands.effects.jump_boost": "Sprungboost",
 
-  "text.quick_commands.set_items": "Items",
-  "button.tooltip.quick_commands.item_give": "Gives you the set item.",
-  "button.tooltip.quick_commands.item_clear": "§c(!)§r Löscht deine ganzen Items.",
-  "text.quick_commands.confirm_clear": "Bist du dir sicher, dass du dein Inventar leeren willst?",
-  "textfield.tooltip.quick_commands.item": "Item-ID",
-  "textfield.tooltip.quick_commands.item_qty": "Item-Anzahl (Optional)",
-  "text.quick_commands.status.no_item": "§cFehlender Text für 'Item_ID'§r"
+  "text.quick_commands.set_scale": "Skalierung",
+  "button.quick_commands.set_scale": "Setze Skalierung",
+  "button.quick_commands.reset_scale": "Setze Skalierung zurück",
+  "button.tooltip.quick_commands.set_scale": "Setzt deine Skalierung auf den eingegebenen Wert.",
+  "button.tooltip.quick_commands.reset_scale": "Setzt deine Skalierung zurück.",
+  "textfield.tooltip.quick_commands.scale": "Ziel-Skalierung",
+  "text.quick_commands.status.no_scale_value": "§cFehlende Ganzzahl/Kommazahl für 'Skalierung'§r",
+  "text.quick_commands.status.invalid_scale_number": "§cUngülige Eingabe für 'Skalierung'§r"
 }

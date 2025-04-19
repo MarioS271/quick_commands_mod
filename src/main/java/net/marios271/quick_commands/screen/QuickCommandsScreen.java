@@ -7,9 +7,8 @@ import net.minecraft.client.gui.tooltip.Tooltip;
 import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.client.gui.widget.TextFieldWidget;
 import net.minecraft.client.gui.widget.TextWidget;
-import net.minecraft.client.network.ClientPlayerEntity;
+import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
-import java.util.Objects;
 
 public class QuickCommandsScreen extends Screen {
     public QuickCommandsScreen() {
@@ -95,7 +94,7 @@ public class QuickCommandsScreen extends Screen {
         textfield_resistance.setTooltip(Tooltip.of(Text.translatable("textfield.tooltip.quick_commands.effect_strength")));
         ButtonWidget button_effect_resistance_give = ButtonWidget.builder(Text.translatable("button.quick_commands.give"), button -> {
                     try { execute("effect give @s resistance infinite " + Integer.parseInt(textfield_resistance.getText()) + " true"); }
-                    catch (NumberFormatException e) { client.player.sendMessage(Text.translatable("text.quick_commands.status.no_effect_value"), false); }
+                    catch (NumberFormatException e) { sendErrorMsg(Text.translatable("text.quick_commands.status.no_effect_value")); }
                 })
                 .dimensions(width / 2 + 108, height / 2 - 95, 50, 20)
                 .tooltip(Tooltip.of(Text.translatable("button.tooltip.quick_commands.effect_give")))
@@ -120,7 +119,7 @@ public class QuickCommandsScreen extends Screen {
         textfield_regeneration.setTooltip(Tooltip.of(Text.translatable("textfield.tooltip.quick_commands.effect_strength")));
         ButtonWidget button_effect_regeneration_give = ButtonWidget.builder(Text.translatable("button.quick_commands.give"), button -> {
                     try { execute("effect give @s regeneration infinite " + Integer.parseInt(textfield_regeneration.getText()) + " true"); }
-                    catch (NumberFormatException e) { client.player.sendMessage(Text.translatable("text.quick_commands.status.no_effect_value"), false); }
+                    catch (NumberFormatException e) { sendErrorMsg(Text.translatable("text.quick_commands.status.no_effect_value")); }
                 })
                 .dimensions(width / 2 + 108, height / 2 - 70, 50, 20)
                 .tooltip(Tooltip.of(Text.translatable("button.tooltip.quick_commands.effect_give")))
@@ -145,7 +144,7 @@ public class QuickCommandsScreen extends Screen {
         textfield_speed.setTooltip(Tooltip.of(Text.translatable("textfield.tooltip.quick_commands.effect_strength")));
         ButtonWidget button_effect_speed_give = ButtonWidget.builder(Text.translatable("button.quick_commands.give"), button -> {
                     try { execute("effect give @s speed infinite " + Integer.parseInt(textfield_speed.getText()) + " true"); }
-                    catch (NumberFormatException e) { client.player.sendMessage(Text.translatable("text.quick_commands.status.no_effect_value"), false); }
+                    catch (NumberFormatException e) { sendErrorMsg(Text.translatable("text.quick_commands.status.no_effect_value")); }
                 })
                 .dimensions(width / 2 + 108, height / 2 - 45, 50, 20)
                 .tooltip(Tooltip.of(Text.translatable("button.tooltip.quick_commands.effect_give")))
@@ -170,7 +169,7 @@ public class QuickCommandsScreen extends Screen {
         textfield_jump_boost.setTooltip(Tooltip.of(Text.translatable("textfield.tooltip.quick_commands.effect_strength")));
         ButtonWidget button_effect_jump_boost_give = ButtonWidget.builder(Text.translatable("button.quick_commands.give"), button -> {
                     try { execute("effect give @s jump_boost infinite " + Integer.parseInt(textfield_jump_boost.getText()) + " true"); }
-                    catch (NumberFormatException e) { client.player.sendMessage(Text.translatable("text.quick_commands.status.no_effect_value"), false); }
+                    catch (NumberFormatException e) { sendErrorMsg(Text.translatable("text.quick_commands.status.no_effect_value")); }
                 })
                 .dimensions(width / 2 + 108, height / 2 - 20, 50, 20)
                 .tooltip(Tooltip.of(Text.translatable("button.tooltip.quick_commands.effect_give")))
@@ -187,38 +186,40 @@ public class QuickCommandsScreen extends Screen {
         addDrawableChild(button_effect_jump_boost_clear);
 
 
-        // ITEMS
-        TextWidget text_items = new TextWidget(Text.translatable("text.quick_commands.set_items"), textRenderer).alignCenter();
-        text_items.setPosition(width / 2 + 94, height / 2 + 20);
-        TextFieldWidget textfield_item = new TextFieldWidget(textRenderer, width / 2 + 12, height / 2 + 35, 145, 20, Text.literal(""));
-        textfield_item.setTooltip(Tooltip.of(Text.translatable("textfield.tooltip.quick_commands.item")));
-        TextFieldWidget textfield_item_qty = new TextFieldWidget(textRenderer, width / 2 + 162, height / 2 + 35, 30, 20, Text.literal("1"));
-        textfield_item_qty.setTextPredicate((text) -> text.matches("[0-9]*"));
-        textfield_item_qty.setTooltip(Tooltip.of(Text.translatable("textfield.tooltip.quick_commands.item_qty")));
-        ButtonWidget button_item_give = ButtonWidget.builder(Text.translatable("button.quick_commands.give"), button -> {
-                    if (!Objects.equals(textfield_item.getText(), "")) {
-                        try { execute("give @s " + textfield_item.getText() + " " + Integer.parseInt(textfield_item_qty.getText())); }
-                        catch (NumberFormatException e) { execute("give @s " + textfield_item.getText() + " 1"); }
+        // SCALE SETTER
+        TextWidget text_items = new TextWidget(Text.translatable("text.quick_commands.set_scale"), textRenderer).alignCenter();
+        text_items.setPosition(width / 2 + 82, height / 2 + 20);
+        TextFieldWidget textfield_scale = new TextFieldWidget(textRenderer, width / 2 + 12, height / 2 + 35, 180, 20, Text.literal(""));
+        textfield_scale.setTooltip(Tooltip.of(Text.translatable("textfield.tooltip.quick_commands.scale")));
+        textfield_scale.setTextPredicate((text) -> text.matches("([0-9]*\\.?[0-9]*)?"));
+
+        ButtonWidget button_set_scale = ButtonWidget.builder(Text.translatable("button.quick_commands.set_scale"), button -> {
+                    String input = textfield_scale.getText();
+                    if (!input.isEmpty()) {
+                        try {
+                            float scale = Float.parseFloat(input);
+                            execute("attribute @s minecraft:scale base set " + scale);
+                        } catch (NumberFormatException e) {
+                            sendErrorMsg(Text.translatable("text.quick_commands.status.invalid_scale_number"));
+                        }
                     } else {
-                        client.player.sendMessage(Text.translatable("text.quick_commands.status.no_item"), false);
-                        client.setScreen(null);
+                        sendErrorMsg(Text.translatable("text.quick_commands.status.no_scale_value"));
                     }
                 })
                 .dimensions(width / 2 + 12, height / 2 + 60, 88, 20)
-                .tooltip(Tooltip.of(Text.translatable("button.tooltip.quick_commands.item_give")))
+                .tooltip(Tooltip.of(Text.translatable("button.tooltip.quick_commands.set_scale")))
                 .build();
-        ButtonWidget button_items_clear = ButtonWidget.builder(Text.translatable("button.quick_commands.clear"), button -> {
-                    MinecraftClient.getInstance().setScreen(new InventoryClearConfirmScreen());
+        ButtonWidget button_reset_scale = ButtonWidget.builder(Text.translatable("button.quick_commands.reset_scale"), button -> {
+                    execute("attribute @s minecraft:scale base set 1.0");
                 })
                 .dimensions(width / 2 + 104, height / 2 + 60, 88, 20)
-                .tooltip(Tooltip.of(Text.translatable("button.tooltip.quick_commands.item_clear")))
+                .tooltip(Tooltip.of(Text.translatable("button.tooltip.quick_commands.reset_scale")))
                 .build();
 
         addDrawableChild(text_items);
-        addDrawableChild(textfield_item);
-        addDrawableChild(textfield_item_qty);
-        addDrawableChild(button_item_give);
-        addDrawableChild(button_items_clear);
+        addDrawableChild(textfield_scale);
+        addDrawableChild(button_set_scale);
+        addDrawableChild(button_reset_scale);
     }
 
     public boolean keyPressed(int keyCode, int scanCode, int modifiers) {
@@ -231,6 +232,10 @@ public class QuickCommandsScreen extends Screen {
 
     private void execute(String command){
         client.player.networkHandler.sendChatCommand(command);
+        MinecraftClient.getInstance().setScreen(null);
+    }
+    private void sendErrorMsg(MutableText text) {
+        client.player.sendMessage(text, false);
         MinecraftClient.getInstance().setScreen(null);
     }
 }

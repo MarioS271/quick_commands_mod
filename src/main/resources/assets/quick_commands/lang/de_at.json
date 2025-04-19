@@ -1,10 +1,7 @@
 {
   "key.category.quick_commands": "QuickCommands",
   "key.quick_commands.open_gui": "GUI aufmocha",
-  "button.quick_commands.give": "Gebn",
-  "button.quick_commands.clear": "Entferna",
   "gui_title.quick_commands.commands": "QuickCommands",
-  "gui_title.quick_commands.confirm_clear": "Löschn vom Inventa bestätign",
 
   "text.quick_commands.set_time": "Zeit",
   "button.quick_commands.time_day": "Tog",
@@ -25,6 +22,8 @@
   "button.tooltip.quick_commands.weather_thunder": "Setzt des Wetta auf Gwitta.",
 
   "text.quick_commands.set_effects": "Effekte",
+  "button.quick_commands.give": "Gebn",
+  "button.quick_commands.clear": "Entferna",
   "button.tooltip.quick_commands.effect_give": "Gibt dia den Effekt.",
   "button.tooltip.quick_commands.effect_clear": "Entfernt dia den Effekt.",
   "textfield.tooltip.quick_commands.effect_strength": "Effektstärke",
@@ -34,11 +33,12 @@
   "text.quick_commands.effects.speed": "Geschwindigkeit",
   "text.quick_commands.effects.jump_boost": "Sprungboost",
 
-  "text.quick_commands.set_items": "Items",
-  "button.tooltip.quick_commands.item_give": "Gibt da des Item.",
-  "button.tooltip.quick_commands.item_clear": "§c(!)§r Nimmt dia deine gonzn Items weg.",
-  "text.quick_commands.confirm_clear": "Bist du dia sicha das du dei Inventar leeren wüst?",
-  "textfield.tooltip.quick_commands.item": "Item-ID",
-  "textfield.tooltip.quick_commands.item_qty": "Item-Anzahl (Optional)",
-  "text.quick_commands.status.no_item": "§cFehlenda Text füa 'Item_ID'§r"
+  "text.quick_commands.set_scale": "Skaliarung",
+  "button.quick_commands.set_scale": "Setz Skaliarung",
+  "button.quick_commands.reset_scale": "Setz Skaliarung zruck",
+  "button.tooltip.quick_commands.set_scale": "Setzt dei Skaliarung auf den eingegbnen Wert.",
+  "button.tooltip.quick_commands.reset_scale": "Setzt dei Skaliarung zruck.",
+  "textfield.tooltip.quick_commands.scale": "Züh-Skaliarung",
+  "text.quick_commands.status.no_scale_value": "§cFehlende Gonzzoi/Kommazoi füa 'Skaliarung'§r",
+  "text.quick_commands.status.invalid_scale_number": "§cUngüdige Gonzzoi/Kommazoi füa 'Skaliarung'§r"
 }
