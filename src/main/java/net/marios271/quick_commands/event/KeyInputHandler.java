@@ -5,10 +5,11 @@ import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.marios271.quick_commands.screen.QuickCommandsScreen;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
+import net.minecraft.util.Identifier;
 import org.lwjgl.glfw.GLFW;
 
 public class KeyInputHandler {
-    public static final String KEY_CATEGORY_QUICK_COMMANDS = "key.category.quick_commands";
+    public static final KeyBinding.Category QUICK_COMMANDS_CATEGORY = KeyBinding.Category.create(Identifier.of("key.category.quick_commands"));
     public static final String KEY_OPEN_GUI = "key.quick_commands.open_gui";
 
     public static KeyBinding openGuiKey;
@@ -26,7 +27,7 @@ public class KeyInputHandler {
                 KEY_OPEN_GUI,
                 InputUtil.Type.KEYSYM,
                 GLFW.GLFW_KEY_F8,
-                KEY_CATEGORY_QUICK_COMMANDS
+                QUICK_COMMANDS_CATEGORY
         ));
 
         registerKeyInputs();
