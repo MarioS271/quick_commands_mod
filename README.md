@@ -24,3 +24,6 @@ A minecraft mod with GUIs for easy access to useful commands.
 ### Download here:
 - [Modrinth](https://modrinth.com/mod/quickcommands)
 - [Curseforge](https://curseforge.com/minecraft/mc-mods/quickcommands)
+
+<br><hr>
+Licensed under the [MarioS271 Closed License](https://license.marios271.net/closed)
