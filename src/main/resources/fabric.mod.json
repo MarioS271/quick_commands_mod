@@ -12,10 +12,9 @@
 		"sources": "https://github.com/MarioS271/quick_commands_mod",
 		"issues": "https://github.com/MarioS271/quick_commands_mod/issues"
 	},
-	"license": "MarioS271 License",
+	"license": "MIT License",
 	"icon": "assets/quick_commands/icon.png",
 	"environment": "client",
-	"accessWidener" : "quick_commands.accesswidener",
 	"entrypoints": {
 		"client": [
 			"net.marios271.quick_commands.QuickCommands"
@@ -23,7 +22,7 @@
 	},
 	"depends": {
 		"fabricloader": ">=0.14.0",
-		"minecraft": "~1.21.10",
+		"minecraft": "~1.21.11",
 		"java": ">=21",
 		"fabric": "*",
 		"fabric-api": "*",
