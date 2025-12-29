@@ -1,8 +1,6 @@
 # quick-commands-mod (fabric)
 A minecraft mod with GUIs for easy access to useful commands.
 
-<br>
-
 ### Current Features (v1.2):
 - Set the time
 - Set the weather
@@ -13,8 +11,8 @@ A minecraft mod with GUIs for easy access to useful commands.
 - English
 - German
 - German (Austrian)
-- Russian
-- Ukrainian
+- [Up to 1.21.4] Russian
+- [Up to 1.21.4] Ukrainian
 
 ### Special Thanks:
 - [ludwici](https://github.com/ludwici) for translating the mod into Russian and Ukranian
