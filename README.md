@@ -24,4 +24,4 @@ A minecraft mod with GUIs for easy access to useful commands.
 - [Curseforge](https://curseforge.com/minecraft/mc-mods/quickcommands)
 
 <br><hr><br>
-Licensed under the MIT License
+This project is licensed under the **GNU Affero General Public License v3.0**. See the [LICENSE](LICENSE) file for details.
