@@ -1,6 +1,8 @@
 package net.marios271.quick_commands.screen;
 
 import net.marios271.quick_commands.handler.KeyInputHandler;
+import net.marios271.quick_commands.helper.RegexFormatter;
+import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.gui.components.Button;
@@ -10,6 +12,7 @@ import net.minecraft.client.gui.components.Tooltip;
 import net.minecraft.client.input.KeyEvent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
+import net.minecraft.network.chat.Style;
 import org.jspecify.annotations.NonNull;
 
 public class QuickCommandsScreen extends Screen {
@@ -89,7 +92,7 @@ public class QuickCommandsScreen extends Screen {
 
         EditBox Textfield_scale = new EditBox(font, width / 2 + 12, height / 2 + 35, 180, 20, Component.literal(""));
         Textfield_scale.setTooltip(Tooltip.create(Component.translatable("textfield.tooltip.quick_commands.scale")));
-        Textfield_scale.setFilter((Component) -> Component.matches("([0-9]*\\.?[0-9]*)?"));
+        Textfield_scale.addFormatter(RegexFormatter.of("[0-9.]", Style.EMPTY.withColor(ChatFormatting.RED)));
 
         Button button_set_scale = Button.builder(Component.translatable("button.quick_commands.set_scale"), button -> {
                     String input = Textfield_scale.getValue();
@@ -127,7 +130,7 @@ public class QuickCommandsScreen extends Screen {
         text_effect.setPosition(width / 2 + 34, height / 2 - yOffset + 7);
 
         EditBox ComponentField = new EditBox(font, width / 2, height / 2 - yOffset, 30, 20, Component.literal(""));
-        ComponentField.setFilter((Component) -> Component.matches("[0-9]*"));
+        ComponentField.addFormatter(RegexFormatter.of("[0-9]*", Style.EMPTY.withColor(ChatFormatting.RED)));
         ComponentField.setMaxLength(3);
         ComponentField.setTooltip(Tooltip.create(Component.translatable("textfield.tooltip.quick_commands.effect_strength")));
 
@@ -175,7 +178,7 @@ public class QuickCommandsScreen extends Screen {
         if (client.player == null)
             return;
 
-        client.player.displayClientMessage(text, false);
+        client.player.sendSystemMessage(text);
         client.setScreen(null);
     }
 }

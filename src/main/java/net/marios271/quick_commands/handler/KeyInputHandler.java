@@ -2,7 +2,7 @@ package net.marios271.quick_commands.handler;
 
 import com.mojang.blaze3d.platform.InputConstants;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
-import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
+import net.fabricmc.fabric.api.client.keymapping.v1.KeyMappingHelper;
 import net.marios271.quick_commands.screen.QuickCommandsScreen;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.resources.Identifier;
@@ -22,7 +22,7 @@ public class KeyInputHandler {
     }
 
     public static void register(){
-        openGuiKey = KeyBindingHelper.registerKeyBinding(new KeyMapping(
+        openGuiKey = KeyMappingHelper.registerKeyMapping(new KeyMapping(
             KEY_OPEN_GUI,
             InputConstants.Type.KEYSYM,
             GLFW.GLFW_KEY_F8,
